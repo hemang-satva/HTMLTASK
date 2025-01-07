@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Satva Support Website</title>
+    </head>
+    <body onload="alert('Welcome to Satva Solutions Support Portal')">
+
+    <!--header section-->
+    <header>
+        <img src="images/satvalogo.png" alt="Satva Solutions Logo" onclick="alert('Satva Solutions - Your Technology Partner')">
+        <h1>Satva Solutions Support</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quick-support">Quick Support</a></li>
+                <li><a href="#ticket">Submit Ticket</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Quick Support Links -->
+        <section id="quick-support">
+            <h2>Quick Support Options</h2>
+            <div class="support-cards">
+                <div class="card" onmouseover="this.style.backgroundColor='#f0f0f0'" onmouseout="this.style.backgroundColor='white'">
+                    <img src="images/techsupport.jpg" alt="Technical Support">
+                    <h3>Technical Support</h3>
+                    <p>Get help with technical issues</p>
+                </div>
+                <div class="card">
+                    <h3>Solutions Provided by Satva Solutions</h3>
+                    <a href="https://satvasolutions.com/#our-solutions" target="_blank">View Solutions</a>
+                    <p>Choose the solution that aligns for your Business</p>
+                </div>
+                <div class="card">
+                    <h3>Services Provided by Satva Solutions</h3>
+                    <h1>Services Provided by Satva Solutions</h1>
+                    <ul>
+                        <li>Software Development</li>
+                        <li>Cloud Solutions</li>
+                        <li>IT Consulting</li>
+                        <li>Managed IT Services</li>
+                        <li>Digital Transformation</li>
+                        <li>Business Process Automation</li>
+                        <li>Mobile Application Development</li>
+                        <li>Enterprise Resource Planning (ERP) Solutions</li>
+                        <li>Data Analytics and Business Intelligence</li>
+                        <li>Cybersecurity Solutions</li>
+                        <li>Web Development</li>
+                        <li>AI and Machine Learning Solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Ticket Form -->
+        <section id="ticket">
+            <h2>Submit Support Ticket</h2>
+            <form onsubmit="alert('Ticket submitted successfully!'); return false;">
+                <fieldset>
+                    <legend>Ticket Information</legend>
+
+                    <div>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div>
+                        <label for="department">Support Department:</label>
+                        <select id="department" name="department" required>
+                            <option value="">Select Department</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="billing">Billing Support</option>
+                            <option value="product">Product Support</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="priority">Priority Level:</label>
+                        <select id="priority" name="priority" required>
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                            <option value="urgent">Urgent</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div>
+                        <label for="description">Issue Description:</label>
+                        <textarea id="description" name="description" rows="5" required></textarea>
+                    </div>
+
+                    <div>
+                        <label for="attachment">Attach File:</label>
+                        <input type="file" id="attachment" name="attachment">
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the terms and conditions</label>
+                    </div>
+
+                    <div>
+                        <button type="submit">Submit Ticket</button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Contact Information -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <h3>24/7 Support Hotline</h3>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Email: support@satvasolutions.com</p>
+                
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+                <p>Weekend Support: Available for urgent issues</p>
+
+                <h3>Office Location</h3>
+                <address>
+                    Satva Solutions<br>
+                    123 Tech Park,<br>
+                    Business District,<br>
+                    City, State 12345
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <h3>Connect With Us</h3>
+            <a href="https://linkedin.com/company/satva-solutions" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/satvasolutions" target="_blank">Twitter</a>
+            <a href="https://facebook.com/satvasolutions" target="_blank">Facebook</a>
+        </div>
+        <p>&copy; 2025 Satva Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+Last edited 2 minutes ago
+
+

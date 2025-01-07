@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+    }
+    
+    #t1{
+         width: 33%;
+    }
+
+    td {
+        padding: 4px 8px;
+        text-align: center;
+    }
+
+    #t1 td:first-child {
+        border-right: none; /* Remove right border of the first column */
+    }
+
+    #t1 td:nth-child(2) {
+        border-left: none; /* Remove left border of the second column */
+        border-right: none; /* Remove right border of the second column */
+    }
+
+    #t1 td:last-child {
+        border-left: none; /* Remove left border of the last column */
+    }
+
+    .text-left {
+        text-align: left;
+    }
+    
+    input[type="text"] {
+        width: 40px;
+        text-align: center;
+    }
+    
+    .t1 {
+        margin-bottom: -1px; /* Remove gap between tables */
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-table {
+        margin-top: 0; /* Remove gap between tables */
+    }
+    
+    .year-date {
+        font-size: 0.9em;
+        color: #666;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    table + table {
+        margin-top: 20px; /* Adjust spacing as needed */
+    }
+    </style>
+</head>
+<body>
+
+<!-- Header Table -->
+<table>
+    <tr id="t1">
+        <td id="t1">Faculty: Faculty of Computer Systems and Control</td>
+        <td id="t1">Speciality: Computer Systems and Technologies</td>
+        <td id="t1">Group: C04S01G62</td>
+    </tr>
+    <tr id="t1">
+        <td id="t1">Day: Monday</td>
+        <td id="t1">Laboratory: 3241</td>
+        <td id="t1">Time: 7:30</td>
+    </tr>
+</table>
+
+<!-- Main Table -->
+<table>
+    <caption>Even Week</caption>
+    <tr id="i1">
+        <td>No.</td>
+        <td>Name</td>
+        <td>Fac number</td>
+        <td>Ex. 1</td>
+        <td>Ex. 2</td>
+        <td>Ex. 3</td>
+        <td>Ex. 4</td>
+        <td>Pr. 1</td>
+        <td>Pr. 2</td>
+        <td>SA</td>
+        <td>Mark SA</td>
+        <td>SP</td>
+        <td>Mark SP</td>
+        <td>Control work 1</td>
+        <td>Control work 2</td>
+        <td>Mark</td>
+        <td>Sign</td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td>Year: 2012</td>
+        <td>Date</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>1.</td>
+        <td class="text-left">Ana Filcheva</td>
+        <td>123208011</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="checkbox"></td>
+    </tr>
+    
+    <tr>
+        <td>2.</td>
+        <td class="text-left">Aneta Petkova</td>
+        <td>121208143</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="checkbox"></td>
+    </tr>
+    
+    <tr>
+        <td>3.</td>
+        <td class="text-left">Angel Vasilev</td>
+        <td>121208138</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="checkbox"></td>
+    </tr>
+    
+    <tr>
+        <td>4.</td>
+        <td class="text-left">Marty Borisov</td>
+        <td>121208160</td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox" checked></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="text" value="123"></td>
+        <td><input type="text" value="5"></td>
+        <td><input type="text" value="43"></td>
+        <td><input type="text"></td>
+        <td><input type="text" value="6"></td>
+        <td><input type="text" value="6"></td>
+        <td><input type="text"></td>
+        <td><input type="checkbox" checked></td>
+    </tr>
+</table>
+
+<div style="text-align: center;">
+    <button>Save</button>
+</div>
+
+</body>
+</html>
